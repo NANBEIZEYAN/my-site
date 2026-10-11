@@ -6,7 +6,6 @@
   <title>美工 - 灼岸</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
     body {
       font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
       background: #fafafa;
@@ -123,13 +122,11 @@
       letter-spacing: 1px;
     }
 
+    /* 切换内容 */
+    .table-wrap { display: none; }
+    .table-wrap.show { display: block; }
+
     /* 表格 */
-    .table-wrap {
-      display: none;
-    }
-    .table-wrap.show {
-      display: block;
-    }
     table {
       width: 100%;
       border-collapse: collapse;
@@ -185,7 +182,6 @@
     <a href="binglian.html">02 病恋</a >
     <a href="meigong.html" class="active">03 美工</a >
     <a href="ziliao.html">04 资料</a >
-    <a href="jiaoxue.html">05 教学</a >
   </nav>
 
   <!-- 顶部标题区 -->
@@ -213,87 +209,27 @@
     <!-- 单约表格 -->
     <div id="dan" class="table-wrap show">
       <table>
-        <tr>
-          <td>价格表 20</td>
-          <td>派单卡 18</td>
-          <td>表情包单个 ≥3r</td>
-        </tr>
-        <tr>
-          <td>预存表 18</td>
-          <td>收款码 12</td>
-          <td>静态冠 25-40</td>
-        </tr>
-        <tr>
-          <td>礼物单 18</td>
-          <td>周星礼 20</td>
-          <td>动态冠 40-120</td>
-        </tr>
-        <tr>
-          <td>自介卡 15</td>
-          <td>恶搞礼物 23</td>
-          <td>一套冠 60-160</td>
-        </tr>
-        <tr>
-          <td>音介卡 17</td>
-          <td>须知卡 15</td>
-          <td>活动长图 25-30</td>
-        </tr>
-        <tr>
-          <td>三表 50</td>
-          <td>头牌卡 20-28</td>
-          <td>活动娱乐 20-25</td>
-        </tr>
-        <tr>
-          <td>四表 55</td>
-          <td>板卡 18-25</td>
-          <td>排面 9-6</td>
-        </tr>
-        <tr>
-          <td>vip 卡 20</td>
-          <td></td>
-          <td></td>
-        </tr>
+        <tr><td>价格表 20</td><td>派单卡 18</td><td>表情包单个 ≥3r</td></tr>
+        <tr><td>预存表 18</td><td>收款码 12</td><td>静态冠 25-40</td></tr>
+        <tr><td>礼物单 18</td><td>周星礼 20</td><td>动态冠 40-120</td></tr>
+        <tr><td>自介卡 15</td><td>恶搞礼物 23</td><td>一套冠 60-160</td></tr>
+        <tr><td>音介卡 17</td><td>须知卡 15</td><td>活动长图 25-30</td></tr>
+        <tr><td>三表 50</td><td>头牌卡 20-28</td><td>活动娱乐 20-25</td></tr>
+        <tr><td>四表 55</td><td>板卡 18-25</td><td>排面 9-6</td></tr>
+        <tr><td>vip 卡 20</td><td></td><td></td></tr>
       </table>
     </div>
 
     <!-- 跟团表格 -->
     <div id="gen" class="table-wrap">
       <table>
-        <tr>
-          <td>价格表 18</td>
-          <td>派单卡 15</td>
-          <td>表情包单个 ≥3r</td>
-        </tr>
-        <tr>
-          <td>预存表 15</td>
-          <td>收款码 10</td>
-          <td>静态冠 20-30</td>
-        </tr>
-        <tr>
-          <td>礼物单 15</td>
-          <td>周星礼 18</td>
-          <td>动态冠 30-100</td>
-        </tr>
-        <tr>
-          <td>自介卡 10</td>
-          <td>恶搞礼物 20</td>
-          <td>一套冠 50-150</td>
-        </tr>
-        <tr>
-          <td>音介卡 12</td>
-          <td>须知卡 12</td>
-          <td>活动长图 20-25</td>
-        </tr>
-        <tr>
-          <td>三表 45</td>
-          <td>头牌卡 18-25</td>
-          <td>活动娱乐 15-20</td>
-        </tr>
-        <tr>
-          <td>四表 50</td>
-          <td>板卡 15-20</td>
-          <td>排面 9-6</td>
-        </tr>
+        <tr><td>价格表 18</td><td>派单卡 15</td><td>表情包单个 ≥3r</td></tr>
+        <tr><td>预存表 15</td><td>收款码 10</td><td>静态冠 20-30</td></tr>
+        <tr><td>礼物单 15</td><td>周星礼 18</td><td>动态冠 30-100</td></tr>
+        <tr><td>自介卡 10</td><td>恶搞礼物 20</td><td>一套冠 50-150</td></tr>
+        <tr><td>音介卡 12</td><td>须知卡 12</td><td>活动长图 20-25</td></tr>
+        <tr><td>三表 45</td><td>头牌卡 18-25</td><td>活动娱乐 15-20</td></tr>
+        <tr><td>四表 50</td><td>板卡 15-20</td><td>排面 9-6</td></tr>
       </table>
     </div>
   </div>
@@ -306,7 +242,7 @@
     <ul class="notice">
       <li>不接受议价，赊账</li>
       <li>先付后做，支持一半定金，跑单不退</li>
-      <li>部分卡类/表情包按低价售出</li>
+      <li>部分卡类 / 表情包按低价售出</li>
       <li>做完不支持退换</li>
       <li>确定后换款 +5r</li>
       <li>默认 24h 出图，排单满按具体排单出图</li>
@@ -321,20 +257,14 @@
   <!-- 底部 -->
   <div class="footer-note">下单默认已读</div>
 
-  <!-- 切换脚本 -->
   <script>
     function showTab(type) {
-      // 取出两个表格和两个标签
       var dan = document.getElementById('dan');
       var gen = document.getElementById('gen');
       var tabs = document.querySelectorAll('.tab');
-
-      // 先隐藏两个表格，去掉所有标签的高亮
       dan.classList.remove('show');
       gen.classList.remove('show');
       tabs.forEach(function(t) { t.classList.remove('active'); });
-
-      // 再根据点击的标签，显示对应表格并高亮
       if (type === 'dan') {
         dan.classList.add('show');
         tabs[0].classList.add('active');
