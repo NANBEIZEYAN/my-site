@@ -6,7 +6,6 @@
   <title>病恋 - 灼岸</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
     body {
       font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
       background: #fafafa;
@@ -33,7 +32,7 @@
       padding-bottom: 4px;
     }
 
-    /* 顶部信息区：左头像+文案，右大图 */
+    /* 顶部信息区 */
     .top {
       display: flex;
       max-width: 1000px;
@@ -41,12 +40,7 @@
       gap: 30px;
       padding: 0 24px;
     }
-
-    /* 左侧 */
-    .left {
-      width: 200px;
-      flex-shrink: 0;
-    }
+    .left { width: 200px; flex-shrink: 0; }
     .avatar {
       width: 120px;
       height: 120px;
@@ -55,17 +49,8 @@
       background: #ddd url('https://i.pinimg.com/736x/33/c7/c7/33c7c70a213ad1575940f45232802bc0.jpg') center/cover no-repeat;
       margin-bottom: 20px;
     }
-    .left .name {
-      font-size: 22px;
-      color: #222;
-      letter-spacing: 4px;
-      margin-bottom: 12px;
-    }
-    .left .desc {
-      font-size: 14px;
-      color: #777;
-      line-height: 1.8;
-    }
+    .left .name { font-size: 22px; color: #222; letter-spacing: 4px; margin-bottom: 12px; }
+    .left .desc { font-size: 14px; color: #777; line-height: 1.8; }
 
     /* 右侧大图 */
     .right {
@@ -88,12 +73,8 @@
       white-space: nowrap;
     }
 
-    /* 下方分块 */
-    .section {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 24px;
-    }
+    /* 分块 */
+    .section { max-width: 1000px; margin: 40px auto; padding: 0 24px; }
     .section-title {
       font-size: 13px;
       color: #999;
@@ -102,8 +83,6 @@
       border-left: 2px solid #b23a2e;
       padding-left: 10px;
     }
-
-    /* 框架 */
     .box {
       background: #fff;
       border: 1px solid #eee;
@@ -113,12 +92,8 @@
       box-shadow: 0 2px 10px rgba(0,0,0,0.04);
     }
 
-    /* 常驻建模：纯文字展示 */
-    .model-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
+    /* 个人信息 + 建模 */
+    .model-list { display: flex; flex-wrap: wrap; gap: 12px; }
     .model-item {
       color: #555;
       font-size: 15px;
@@ -127,20 +102,11 @@
       letter-spacing: 1px;
     }
 
-    /* 标签：胶囊样式 */
+    /* 标签 */
     .tag-group { margin-bottom: 18px; }
     .tag-group:last-child { margin-bottom: 0; }
-    .tag-label {
-      font-size: 12px;
-      color: #999;
-      letter-spacing: 2px;
-      margin-bottom: 10px;
-    }
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
+    .tag-label { font-size: 12px; color: #999; letter-spacing: 2px; margin-bottom: 10px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 10px; }
     .tag {
       border: 1px solid #ddd;
       border-radius: 30px;
@@ -150,10 +116,25 @@
       letter-spacing: 1px;
       transition: 0.3s;
     }
-    .tag:hover {
-      border-color: #b23a2e;
+    .tag:hover { border-color: #b23a2e; color: #b23a2e; }
+
+    /* 个人须知 */
+    .notice-list { list-style: none; }
+    .notice-list li {
+      padding: 8px 0 8px 20px;
+      position: relative;
+      font-size: 14px;
+      color: #555;
+      line-height: 1.9;
+      letter-spacing: 0.5px;
+    }
+    .notice-list li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
       color: #b23a2e;
     }
+    .red-text { color: #c0392b; font-weight: bold; }
   </style>
 </head>
 <body>
@@ -164,10 +145,9 @@
     <a href="binglian.html" class="active">02 病恋</a >
     <a href="meigong.html">03 美工</a >
     <a href="ziliao.html">04 资料</a >
-    <a href="jiaoxue.html">05 教学</a >
   </nav>
 
-  <!-- 顶部：左信息 + 右大图 -->
+  <!-- 顶部 -->
   <div class="top">
     <div class="left">
       <div class="avatar"></div>
@@ -176,6 +156,20 @@
     </div>
     <div class="right">
       <div class="poem">Poem of White Water</div>
+    </div>
+  </div>
+
+  <!-- 个人信息 -->
+  <div class="section">
+    <div class="section-title">个人信息</div>
+    <div class="box">
+      <div class="model-list">
+        <span class="model-item">女</span>
+        <span class="model-item">20</span>
+        <span class="model-item">处女座</span>
+        <span class="model-item">infp</span>
+        <span class="model-item">le-h</span>
+      </div>
     </div>
   </div>
 
@@ -191,11 +185,10 @@
     </div>
   </div>
 
-  <!-- 风格标签区 -->
+  <!-- 风格标签 -->
   <div class="section">
-    <div class="section-title">STYLES / 风格标签</div>
+    <div class="section-title">风格</div>
     <div class="box">
-
       <div class="tag-group">
         <div class="tag-label">主风格</div>
         <div class="tags">
@@ -205,7 +198,6 @@
           <span class="tag">低无</span>
         </div>
       </div>
-
       <div class="tag-group">
         <div class="tag-label">副风格</div>
         <div class="tags">
@@ -214,7 +206,27 @@
           <span class="tag">微文艺</span>
         </div>
       </div>
+    </div>
+  </div>
 
+  <!-- 个人须知 -->
+  <div class="section">
+    <div class="section-title">个人须知</div>
+    <div class="box">
+      <ul class="notice-list">
+        <li>Le 拒男板，男板下单恋单默认送单</li>
+        <li>十分钟内可退换，若要离开请说明原因，不接受卡单</li>
+        <li>请提前告知你的雷点、喜好与备注，我会尽力而为</li>
+        <li>不接受任何暗雷，有特殊需求请提前说明</li>
+        <li>在非提前告知的情况下，请勿用截图 / 视频等方式记录</li>
+        <li>单内默认恋人 / 暧昧关系，dom 病默认 k9</li>
+        <li>拼刺刀状态低无同行新手板辩论赛等特殊请提前告知</li>
+        <li>辛苦回合制对话，请不要打断我</li>
+        <li>婉拒不配合、乱跑、砸场子等行为</li>
+        <li>婉拒旁观 / 1 陪 2，我并不希望有人打扰我们的约会</li>
+        <li>我的风格取决于你的反应</li>
+        <li>过程中如有不适，请说“<span class="red-text">灼岸我想休息</span>”</li>
+      </ul>
     </div>
   </div>
 
