@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>资料 - 灼岸</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+      background: #fafafa;
+      color: #333;
+      padding-bottom: 60px;
+    }
+
+    /* 导航 */
+    nav {
+      background: #fff;
+      padding: 18px 40px;
+      border-bottom: 1px solid #eee;
+    }
+    nav a {
+      color: #888;
+      text-decoration: none;
+      margin-right: 28px;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+    nav a.active {
+      color: #b23a2e;
+      border-bottom: 2px solid #b23a2e;
+      padding-bottom: 4px;
+    }
+
+    /* 顶部信息区 */
+    .top {
+      max-width: 800px;
+      margin: 60px auto 0;
+      padding: 0 24px;
+    }
+    .name-line {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+    .name-line .big {
+      font-size: 40px;
+      color: #222;
+      letter-spacing: 6px;
+      font-weight: bold;
+    }
+    .name-line .small {
+      font-size: 14px;
+      color: #aaa;
+      letter-spacing: 1px;
+    }
+    .top .teacher {
+      font-size: 15px;
+      color: #777;
+      letter-spacing: 2px;
+      margin-bottom: 6px;
+    }
+    .top .auth {
+      font-size: 14px;
+      color: #999;
+      letter-spacing: 1px;
+    }
+
+    /* 分割线 */
+    .divider {
+      max-width: 800px;
+      height: 1px;
+      background: #e5e5e5;
+      margin: 40px auto;
+    }
+
+    /* 区块 */
+    .block {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .block h2 {
+      font-size: 20px;
+      color: #222;
+      letter-spacing: 4px;
+      margin-bottom: 20px;
+      font-weight: normal;
+    }
+
+    /* 表格 */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    td, th {
+      border: 1px solid #eee;
+      padding: 16px 14px;
+      letter-spacing: 1px;
+      text-align: left;
+      vertical-align: top;
+      line-height: 1.8;
+    }
+    th {
+      background: #fcfcfc;
+      color: #333;
+      font-weight: normal;
+      letter-spacing: 2px;
+    }
+
+    /* 须知 */
+    .notice {
+      list-style: none;
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 6px;
+      padding: 24px 28px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    }
+    .notice li {
+      padding: 9px 0 9px 20px;
+      position: relative;
+      font-size: 14px;
+      color: #555;
+      line-height: 1.8;
+      letter-spacing: 0.5px;
+    }
+    .notice li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: #b23a2e;
+    }
+
+    /* 底部 */
+    .footer-note {
+      text-align: center;
+      font-size: 13px;
+      color: #aaa;
+      letter-spacing: 2px;
+      margin: 50px 0 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 导航 -->
+  <nav>
+    <a href=" ">01 首页</a >
+    <a href="binglian.html">02 病恋</a >
+    <a href="meigong.html">03 美工</a >
+    <a href="ziliao.html" class="active">04 资料</a >
+  </nav>
+
+  <!-- 顶部信息 -->
+  <div class="top">
+    <div class="name-line">
+      <span class="big">灼岸</span>
+      <span class="small">曾用名 珩舒</span>
+    </div>
+    <div class="teacher">恩师 何也</div>
+    <div class="auth">-契- 排版均已授权</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 价格 -->
+  <div class="block">
+    <h2>价格</h2>
+
+    <table>
+      <tr>
+        <th>单约</th>
+        <th>跟团</th>
+        <th>动态</th>
+        <th>撞色</th>
+      </tr>
+      <tr>
+        <td>模板 20r<br>盲盒 35r<br>定制 45r</td>
+        <td>模板 18r<br>盲盒 30r<br>定制 40r</td>
+        <td>微动态 +5<br>多动态 +10<br>全动态 +20</td>
+        <td>双色 +5<br>三色 +5<br>多色 +20</td>
+      </tr>
+      <tr>
+        <th>超链接</th>
+        <th>其他</th>
+        <th>买断</th>
+        <th>改资料</th>
+      </tr>
+      <tr>
+        <td>3r 一份<br>18r 六份<br>18r 包上传图片</td>
+        <td>音乐 3r 一条<br>投票 3r 一条<br>倒计时 3r 一条<br>加急按时间加钱</td>
+        <td>定制 188r<br>盲盒 158r<br>跟团买断 158r<br>盲盒买断 128r</td>
+        <td>单约 35r<br>跟团 30r</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 须知 -->
+  <div class="block">
+    <h2>须知</h2>
+    <ul class="notice">
+      <li>不接受议价 / 赊账，模板先付后做</li>
+      <li>盲盒 / 定制支持定金 30%，跑单不退，拒口头排单</li>
+      <li>部分模板改不了颜色和图</li>
+      <li>出图时间从付款后拿到全部资料开始计算</li>
+      <li>跟团月满三单，不满补单约差价</li>
+      <li>资料售后仅支持改字、图片上传及排版补给</li>
+      <li>资料定制自备色卡没有具体颜色可协商大概主色</li>
+      <li>主风格极简款 / 拼图款</li>
+      <li>资料要求需详细告知</li>
+      <li>全部资料提供后进行排单</li>
+      <li>及时复制保存使用，一客一换，非我原因不售后</li>
+      <li>无排单模板默认 48H 内出，有排单模板默认 78H 内出，其他视情况而定</li>
+      <li>资料颜色仅支持单色 / 双色图片</li>
+      <li>部分排版均原创灵感，禁任意形式借鉴 / 模仿 / 抄袭，一经发现原价 ×10</li>
+      <li>定制自备色卡 / 例图，图片版权与我无关</li>
+      <li>无元素提供默认盲盒模板不可买断</li>
+      <li>定制 / 盲盒均可买断</li>
+      <li>超链接描述包含：须知头牌、礼赠、板评、随笔、话术</li>
+      <li>自介卡、须知卡外放需要提前说明</li>
+      <li>如原资料有超链接可免费插入</li>
+      <li>VIP 音乐加不上请找普通音乐</li>
+    </ul>
+  </div>
+
+  <!-- 底部 -->
+  <div class="footer-note">下单默认可展</div>
+
+</body>
+</html>
