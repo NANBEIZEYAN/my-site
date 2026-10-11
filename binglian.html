@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>病恋 - 灼岸</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+      background: #0f0f0f;
+      color: #ccc;
+      padding-bottom: 60px;
+    }
+
+    /* 导航 */
+    nav {
+      background: #141414;
+      padding: 18px 40px;
+      border-bottom: 1px solid #222;
+    }
+    nav a {
+      color: #777;
+      text-decoration: none;
+      margin-right: 28px;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+    nav a.active {
+      color: #c0392b;
+      border-bottom: 2px solid #c0392b;
+      padding-bottom: 4px;
+    }
+
+    /* 顶部信息区：左头像+文案，右大图 */
+    .top {
+      display: flex;
+      max-width: 1000px;
+      margin: 40px auto;
+      gap: 30px;
+      padding: 0 24px;
+    }
+
+    /* 左侧 */
+    .left {
+      width: 200px;
+      flex-shrink: 0;
+    }
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 2px solid #333;
+      background: #222 url('https://i.pravatar.cc/300?img=47') center/cover no-repeat;
+      margin-bottom: 20px;
+    }
+    .left .name {
+      font-size: 22px;
+      color: #eee;
+      letter-spacing: 4px;
+      margin-bottom: 12px;
+    }
+    .left .desc {
+      font-size: 14px;
+      color: #888;
+      line-height: 1.8;
+    }
+
+    /* 右侧大图 */
+    .right {
+      flex: 1;
+      height: 220px;
+      background: #1a1a1a url('https://images.unsplash.com/photo-1508610048659-a06b669e3321?w=1200') center/cover no-repeat;
+      border-radius: 4px;
+      position: relative;
+    }
+    .right .poem {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #e8e8e8;
+      font-size: 22px;
+      letter-spacing: 3px;
+      text-align: center;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+      white-space: nowrap;
+    }
+
+    /* 下方分块 */
+    .section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+    .section-title {
+      font-size: 13px;
+      color: #555;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+      border-left: 2px solid #c0392b;
+      padding-left: 10px;
+    }
+
+    /* 框架 */
+    .box {
+      background: #161616;
+      border: 1px solid #222;
+      border-radius: 6px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+
+    /* 常驻建模：纯文字展示 */
+    .model-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .model-item {
+      color: #bbb;
+      font-size: 15px;
+      border-bottom: 1px dashed #333;
+      padding-bottom: 4px;
+      letter-spacing: 1px;
+    }
+
+    /* 标签：胶囊样式 */
+    .tag-group {
+      margin-bottom: 18px;
+    }
+    .tag-group:last-child { margin-bottom: 0; }
+    .tag-label {
+      font-size: 12px;
+      color: #666;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .tag {
+      border: 1px solid #444;
+      border-radius: 30px;
+      padding: 6px 18px;
+      font-size: 13px;
+      color: #aaa;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+    .tag:hover {
+      border-color: #c0392b;
+      color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 导航 -->
+  <nav>
+    <a href=" ">01 首页</a >
+    <a href="binglian.html" class="active">02 病恋</a >
+    <a href="meigong.html">03 美工</a >
+    <a href="ziliao.html">04 资料</a >
+    <a href="jiaoxue.html">05 教学</a >
+  </nav>
+
+  <!-- 顶部：左信息 + 右大图 -->
+  <div class="top">
+    <div class="left">
+      <div class="avatar"></div>
+      <div class="name">灼岸</div>
+      <div class="desc">我站在荒凉的废墟上<br>凝视着远处的夕阳</div>
+    </div>
+    <div class="right">
+      <div class="poem">Poem of White Water</div>
+    </div>
+  </div>
+
+  <!-- 常驻建模 -->
+  <div class="section">
+    <div class="section-title">常驻建模</div>
+    <div class="box">
+      <div class="model-list">
+        <span class="model-item">耳坠虚荣</span>
+        <span class="model-item">阿努比斯</span>
+        <span class="model-item">白枭</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 标签区 -->
+  <div class="section">
+    <div class="section-title">STYLES / 风格标签</div>
+    <div class="box">
+
+      <div class="tag-group">
+        <div class="tag-label">主标签</div>
+        <div class="tags">
+          <span class="tag">温病</span>
+          <span class="tag">dom病</span>
+          <span class="tag">白话</span>
+          <span class="tag">低无</span>
+        </div>
+      </div>
+
+      <div class="tag-group">
+        <div class="tag-label">副标签</div>
+        <div class="tags">
+          <span class="tag">高恋</span>
+          <span class="tag">诱导</span>
+          <span class="tag">微文艺</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
