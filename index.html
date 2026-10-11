@@ -6,174 +6,49 @@
   <title>欢迎 - 灼岸</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
-      background: #fafafa;
-      color: #333;
-    }
-
-    /* 顶部导航 */
-    nav {
-      background: #fff;
-      padding: 18px 40px;
-      border-bottom: 1px solid #eee;
-    }
-    nav a {
-      color: #888;
-      text-decoration: none;
-      margin-right: 28px;
-      font-size: 14px;
-      letter-spacing: 1px;
-    }
-    nav a.active {
-      color: #b23a2e;
-      border-bottom: 2px solid #b23a2e;
-      padding-bottom: 4px;
-    }
-
-    /* 背景大图 */
-    .banner {
-      width: 100%;
-      height: 320px;
-      background: #2a2a2a url('https://i.pinimg.com/1200x/53/17/bc/5317bc3cc6593047a4978d6c6215803c.jpg') center/cover no-repeat;
-      position: relative;
-    }
-
-    /* 状态标签 */
-    .status {
-      position: absolute;
-      left: 24px;
-      bottom: 24px;
-      background: rgba(0,0,0,0.55);
-      color: #fff;
-      font-size: 13px;
-      padding: 8px 16px;
-      border-radius: 20px;
-      letter-spacing: 1px;
-    }
-    .status .dot {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      background: #4caf50;
-      border-radius: 50%;
-      margin-right: 8px;
-    }
-
-    /* 头像 */
-    .avatar {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      border: 6px solid #fff;
-      background: #ddd url('https://i.pinimg.com/736x/33/c7/c7/33c7c70a213ad1575940f45232802bc0.jpg') center/cover no-repeat;
-      position: absolute;
-      left: 50%;
-      bottom: -70px;
-      transform: translateX(-50%);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-    }
-
-    /* 主内容区 */
-    .main {
-      max-width: 640px;
-      margin: 0 auto;
-      padding: 100px 24px 80px;
-      text-align: center;
-    }
-
-    .small-title {
-      color: #b23a2e;
-      font-size: 13px;
-      letter-spacing: 3px;
-      margin-bottom: 16px;
-    }
-
-    .name {
-      font-size: 48px;
-      font-weight: bold;
-      letter-spacing: 6px;
-      color: #222;
-    }
-
-    .en-name {
-      font-style: italic;
-      color: #999;
-      font-size: 20px;
-      margin-top: 8px;
-      letter-spacing: 2px;
-    }
-
-    .divider {
-      width: 50px;
-      height: 3px;
-      background: #b23a2e;
-      margin: 24px auto;
-    }
-
-    /* 基本信息 */
-    .info {
-      color: #555;
-      font-size: 16px;
-      letter-spacing: 2px;
-      margin-bottom: 32px;
-    }
+    body { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; background: #fafafa; color: #333; }
+    nav { background: #fff; padding: 18px 40px; border-bottom: 1px solid #eee; }
+    nav a { color: #888; text-decoration: none; margin-right: 28px; font-size: 14px; letter-spacing: 1px; }
+    nav a.active { color: #b23a2e; border-bottom: 2px solid #b23a2e; padding-bottom: 4px; }
+    .banner { width: 100%; height: 320px; background: #2a2a2a url('https://i.pinimg.com/1200x/53/17/bc/5317bc3cc6593047a4978d6c6215803c.jpg') center/cover no-repeat; position: relative; }
+    .status { position: absolute; left: 24px; bottom: 24px; background: rgba(0,0,0,0.55); color: #fff; font-size: 13px; padding: 8px 16px; border-radius: 20px; letter-spacing: 1px; }
+    .status .dot { display: inline-block; width: 8px; height: 8px; background: #4caf50; border-radius: 50%; margin-right: 8px; }
+    .avatar { width: 140px; height: 140px; border-radius: 50%; border: 6px solid #fff; background: #ddd url('https://i.pinimg.com/736x/33/c7/c7/33c7c70a213ad1575940f45232802bc0.jpg') center/cover no-repeat; position: absolute; left: 50%; bottom: -70px; transform: translateX(-50%); box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
+    .main { max-width: 640px; margin: 0 auto; padding: 100px 24px 80px; text-align: center; }
+    .small-title { color: #b23a2e; font-size: 13px; letter-spacing: 3px; margin-bottom: 16px; }
+    .name { font-size: 48px; font-weight: bold; letter-spacing: 6px; color: #222; }
+    .en-name { font-style: italic; color: #999; font-size: 20px; margin-top: 8px; letter-spacing: 2px; }
+    .divider { width: 50px; height: 3px; background: #b23a2e; margin: 24px auto; }
+    .info { color: #555; font-size: 16px; letter-spacing: 2px; margin-bottom: 32px; }
     .info span { margin: 0 6px; }
-
-    /* 标签 */
-    .tags {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 8px;
-    }
-    .tag {
-      border: 1px solid #ddd;
-      padding: 8px 18px;
-      font-size: 14px;
-      color: #666;
-      letter-spacing: 1px;
-      background: #fff;
-    }
+    .tags { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+    .tag { border: 1px solid #ddd; padding: 8px 18px; font-size: 14px; color: #666; letter-spacing: 1px; background: #fff; }
   </style>
 </head>
 <body>
-
-  <!-- 导航 -->
   <nav>
     <a href=" " class="active">01 首页</a >
     <a href="binglian.html">02 病恋</a >
     <a href="meigong.html">03 美工</a >
     <a href="ziliao.html">04 资料</a >
-    <a href="jiaoxue.html">05 教学</a >
   </nav>
-
-  <!-- 背景图 + 头像 -->
   <div class="banner">
     <div class="status"><span class="dot"></span>STATUS: ONLINE</div>
     <div class="avatar"></div>
   </div>
-
-  <!-- 主内容 -->
   <div class="main">
     <div class="small-title">WELCOME PAGE</div>
     <div class="name">灼岸</div>
     <div class="en-name">Zhuoan</div>
     <div class="divider"></div>
-
     <div class="info">
       <span>20</span>·<span>女</span>·<span>处女座</span>·<span>INFP</span>
     </div>
-
     <div class="tags">
       <div class="tag">病恋</div>
       <div class="tag">美工</div>
       <div class="tag">资料</div>
-      <div class="tag">教学</div>
     </div>
   </div>
-
 </body>
 </html>
