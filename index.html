@@ -3,40 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的主页</title>
+  <title>首页 - 灼岸</title>
   <style>
-    body {
-      font-family: "Microsoft YaHei", sans-serif;
-      background-color: #f7f7f7;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .card {
-      background: #fff;
-      padding: 40px 60px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    h1 {
-      color: #333;
-      margin-bottom: 10px;
-    }
-    p {
-      color: #888;
-    }
-    .red {
-      color: #b23a2e;
-    }
+    body { font-family: "Microsoft YaHei", sans-serif; background: #f7f7f7; margin: 0; }
+    nav { background: #fff; padding: 16px 40px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+    nav a { color: #555; text-decoration: none; margin-right: 24px; font-size: 15px; }
+    nav a:hover { color: #b23a2e; }
+    .content { max-width: 600px; margin: 80px auto; background: #fff; padding: 60px; border-radius: 12px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+    h1 { color: #333; }
+    .red { color: #b23a2e; }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>你好，我是 <span class="red">南北泽延</span></h1>
-    <p>这是我的第一个网页</p >
+  <nav>
+    <a href=" ">首页</a >
+    <a href="profile.html">个人资料</a >
+    <a href="gallery.html">相册</a >
+  </nav>
+  <div class="content">
+    <h1>你好，我是 <span class="red">灼岸</span></h1>
+    <p>欢迎来到我的主页</p >
   </div>
 </body>
 </html>
